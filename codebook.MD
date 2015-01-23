@@ -1,0 +1,19 @@
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+
+Variables in the tidy dataset (tidy_data.txt)
+"Subject.id" : Subject identification number
+"Activity.Name" : Name of the activity if the subject. The possible values are :
+
+WALKING
+WALKING_UPSTAIRS
+WALKING_DOWNSTAIRS
+SITTING
+STANDING
+LAYING
+All the following variables have been averaged from the original dataset and prefixed by "Mean."
+The original variables name has been tidyed by removing "()" and "-".
+The original list of variables of each feature vector is available in 'features.txt'
+
+"Mean.tBodyAccMeanX" "Mean.tBodyAccMeanY" "Mean.tBodyAccMeanZ" "Mean.tBodyAccStdX" "Mean.tBodyAccStdY" "Mean.tBodyAccStdZ" "Mean.tGravityAccMeanX" "Mean.tGravityAccMeanY" "Mean.tGravityAccMeanZ" "Mean.tGravityAccStdX" "Mean.tGravityAccStdY" "Mean.tGravityAccStdZ" "Mean.tBodyAccJerkMeanX" "Mean.tBodyAccJerkMeanY" "Mean.tBodyAccJerkMeanZ" "Mean.tBodyAccJerkStdX" "Mean.tBodyAccJerkStdY" "Mean.tBodyAccJerkStdZ" "Mean.tBodyGyroMeanX" "Mean.tBodyGyroMeanY" "Mean.tBodyGyroMeanZ" "Mean.tBodyGyroStdX" "Mean.tBodyGyroStdY" "Mean.tBodyGyroStdZ" "Mean.tBodyGyroJerkMeanX" "Mean.tBodyGyroJerkMeanY" "Mean.tBodyGyroJerkMeanZ" "Mean.tBodyGyroJerkStdX" "Mean.tBodyGyroJerkStdY" "Mean.tBodyGyroJerkStdZ" "Mean.tBodyAccMagMean" "Mean.tBodyAccMagStd" "Mean.tGravityAccMagMean" "Mean.tGravityAccMagStd" "Mean.tBodyAccJerkMagMean" "Mean.tBodyAccJerkMagStd" "Mean.tBodyGyroMagMean" "Mean.tBodyGyroMagStd" "Mean.tBodyGyroJerkMagMean" "Mean.tBodyGyroJerkMagStd" "Mean.fBodyAccMeanX" "Mean.fBodyAccMeanY" "Mean.fBodyAccMeanZ" "Mean.fBodyAccStdX" "Mean.fBodyAccStdY" "Mean.fBodyAccStdZ" "Mean.fBodyAccMeanFreqX" "Mean.fBodyAccMeanFreqY" "Mean.fBodyAccMeanFreqZ" "Mean.fBodyAccJerkMeanX" "Mean.fBodyAccJerkMeanY" "Mean.fBodyAccJerkMeanZ" "Mean.fBodyAccJerkStdX" "Mean.fBodyAccJerkStdY" "Mean.fBodyAccJerkStdZ" "Mean.fBodyAccJerkMeanFreqX" "Mean.fBodyAccJerkMeanFreqY" "Mean.fBodyAccJerkMeanFreqZ" "Mean.fBodyGyroMeanX" "Mean.fBodyGyroMeanY" "Mean.fBodyGyroMeanZ" "Mean.fBodyGyroStdX" "Mean.fBodyGyroStdY" "Mean.fBodyGyroStdZ" "Mean.fBodyGyroMeanFreqX" "Mean.fBodyGyroMeanFreqY" "Mean.fBodyGyroMeanFreqZ" "Mean.fBodyAccMagMean" "Mean.fBodyAccMagStd" "Mean.fBodyAccMagMeanFreq" "Mean.fBodyBodyAccJerkMagMean" "Mean.fBodyBodyAccJerkMagStd" "Mean.fBodyBodyAccJerkMagMeanFreq" "Mean.fBodyBodyGyroMagMean" "Mean.fBodyBodyGyroMagStd" "Mean.fBodyBodyGyroMagMeanFreq" "Mean.fBodyBodyGyroJerkMagMean" "Mean.fBodyBodyGyroJerkMagStd" "Mean.fBodyBodyGyroJerkMagMeanFreq"
